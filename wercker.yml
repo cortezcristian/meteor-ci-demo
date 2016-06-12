@@ -15,14 +15,14 @@ build:
         name: generate locales
         code: locale-gen en_US.UTF-8
     - script:
-        name: meteor install
-        code: curl https://install.meteor.com | /bin/sh
-    - script:
         name: phantomjs hidden dependency
         code: sudo apt-get update
     - script:
-        name: phantomjs hidden dependency
-        code: sudo apt-get install libxft-dev | yes
+        name: phantomjs hidden dependency 2
+        code: sudo apt-get install -y libxft-dev
+    - script:
+        name: meteor install
+        code: curl https://install.meteor.com | /bin/sh
     - script:
         name: meteor test
         code: LC_ALL=en_US.UTF-8 meteor test --once --driver-package dispatch:mocha-phantomjs
