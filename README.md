@@ -11,3 +11,4 @@ $ meteor test --once --driver-package dispatch:mocha-phantomjs
 - [enable mongo service](http://devcenter.wercker.com/docs/services/mongodb.html)
 - [dispatch:mocha-phantomjs](https://atmospherejs.com/dispatch/mocha-phantomjs)
 - [phantomjs has a secret dependency (documentation error)](https://github.com/ariya/phantomjs/issues/10904)
+- [Issues with libfontconfig / libxft-dev](http://askubuntu.com/questions/440678/issues-with-libfontconfig-libxft-dev)
