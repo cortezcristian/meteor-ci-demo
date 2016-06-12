@@ -28,6 +28,9 @@ if (Meteor.isServer) {
         deleteTask.apply(invocation, [taskId]);
         assert.equal(Tasks.find().count(), 0);
       });
+
+      it('should not fail baby', () => {
+      });
     });
   });
 }
