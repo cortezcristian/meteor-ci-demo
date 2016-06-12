@@ -14,3 +14,9 @@ $ meteor test --once --driver-package dispatch:mocha-phantomjs
 - [phantomjs has a secret dependency (documentation error)](https://github.com/ariya/phantomjs/issues/10904)
 - [Issues with libfontconfig / libxft-dev](http://askubuntu.com/questions/440678/issues-with-libfontconfig-libxft-dev)
 - [adding badge](http://blog.wercker.com/2014/02/10/branch-badges.html)
+
+```
+$ npm install -g mupx
+```
+
+- [Environment variables](http://devcenter.wercker.com/docs/environment-variables/index.html)
