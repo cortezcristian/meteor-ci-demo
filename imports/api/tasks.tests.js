@@ -29,8 +29,7 @@ if (Meteor.isServer) {
         assert.equal(Tasks.find().count(), 0);
       });
 
-      it('should fail baby', () => {
-        throw new Error("Epic fail");
+      it('should not fail baby', () => {
       });
     });
   });
