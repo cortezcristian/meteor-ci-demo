@@ -12,8 +12,11 @@ build:
         name: set mongodb lang flag
         code: export LC_ALL=en_US.UTF-8 && sudo sh -c "echo -e 'LANG=en_US.UTF-8\nLC_ALL=en_US.UTF-8' > /etc/default/locale"
     - script:
+        name: generate locales
+        code: locale-gen en_US.UTF-8
+    - script:
         name: meteor install
         code: curl https://install.meteor.com | /bin/sh
     - script:
         name: meteor test
-        code: meteor test --once --driver-package dispatch:mocha-phantomjs
+        code: LC_ALL=en_US.UTF-8 meteor test --once --driver-package dispatch:mocha-phantomjs
