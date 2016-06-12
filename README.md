@@ -1,4 +1,5 @@
 # meteor-ci-demo
+[![wercker status](https://app.wercker.com/status/2a7baacf59bb6724834d58e4cd0e5579/m "wercker status")](https://app.wercker.com/project/bykey/2a7baacf59bb6724834d58e4cd0e5579)
 Meteor CI Demo
 
 ```
