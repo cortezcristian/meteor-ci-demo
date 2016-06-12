@@ -22,7 +22,7 @@ build:
         code: sudo apt-get update
     - script:
         name: phantomjs hidden dependency
-        code: sudo apt-get install libxft-dev
+        code: sudo apt-get install libxft-dev | yes
     - script:
         name: meteor test
         code: LC_ALL=en_US.UTF-8 meteor test --once --driver-package dispatch:mocha-phantomjs
