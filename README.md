@@ -12,3 +12,4 @@ $ meteor test --once --driver-package dispatch:mocha-phantomjs
 - [enable mongo service](http://devcenter.wercker.com/docs/services/mongodb.html)
 - [dispatch:mocha-phantomjs](https://atmospherejs.com/dispatch/mocha-phantomjs)
 - [phantomjs has a secret dependency (documentation error)](https://github.com/ariya/phantomjs/issues/10904)
+- [adding badge](http://blog.wercker.com/2014/02/10/branch-badges.html)
