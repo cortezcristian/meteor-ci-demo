@@ -7,5 +7,8 @@ build:
           echo "node version $(node -v) running"
           echo "npm version $(npm -v) runnin:g"
     - script:
-        name: install meteor
+        name: meteor install
         code: curl https://install.meteor.com | /bin/sh
+    - script:
+        name: meteor test
+        code: meteor test --once --driver-package dispatch:mocha-phantomjs
