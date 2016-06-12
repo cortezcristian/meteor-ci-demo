@@ -19,7 +19,10 @@ build:
         code: curl https://install.meteor.com | /bin/sh
     - script:
         name: phantomjs hidden dependency
-        code: sudo apt-get install libfontconfig
+        code: sudo apt-get update
+    - script:
+        name: phantomjs hidden dependency
+        code: sudo apt-get install libxft-dev
     - script:
         name: meteor test
         code: LC_ALL=en_US.UTF-8 meteor test --once --driver-package dispatch:mocha-phantomjs
